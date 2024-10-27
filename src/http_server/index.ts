@@ -1,6 +1,11 @@
 import * as fs from 'fs';
 import * as path from 'path';
 import * as http from 'http';
+import { App } from './app';
+import { config } from 'dotenv';
+config();
+
+const PORT = process.env.PORT;
 
 export const httpServer = http.createServer(function (req, res) {
   const __dirname = path.resolve(path.dirname(''));
@@ -16,9 +21,8 @@ export const httpServer = http.createServer(function (req, res) {
   });
 });
 
-import { App } from './app';
 const app = new App();
 
-app.init().on('listening', () => {
-  console.log(`WebSocket server is listening on port 3000`);
+app.start().on('listening', () => {
+  console.warn(`WebSocket server is listening on port ${PORT}`);
 });
