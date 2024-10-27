@@ -13,6 +13,7 @@
   "keywords": [],
   "license": "ISC",
   "devDependencies": {
+    "@types/uuid": "^10.0.0",
     "@types/ws": "^8.5.12",
     "nodemon": "^2.0.16"
   },
@@ -21,12 +22,13 @@
     "@types/webpack": "^5.28.5",
     "dotenv": "^16.4.5",
     "nodemon": "^3.1.7",
-    "ts-node": "^10.9.2",
     "ts-loader": "^9.5.1",
+    "ts-node": "^10.9.2",
     "ts-node-dev": "^2.0.0",
     "typescript": "^5.6.3",
-    "ws": "^8.8.0",
+    "uuid": "^10.0.0",
     "webpack": "^5.95.0",
-    "webpack-cli": "^5.1.4"
+    "webpack-cli": "^5.1.4",
+    "ws": "^8.8.0"
   }
 }

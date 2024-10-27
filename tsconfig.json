@@ -16,6 +16,6 @@
     "target": "ESNext",
     "strictPropertyInitialization": false
   },
-  "files": ["index.ts"],
+  "files": ["index.ts", "global.d.ts"],
   "exclude": ["node_modules", "dist"]
 }
